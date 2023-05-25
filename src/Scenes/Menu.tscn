@@ -94,8 +94,11 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Map generator made by schloppa
 (https://github.com/schloppa/godot-randomwalk)
+
 Room spawn by Yni, using juanjp600's code
-(https://undertowgames.com/forum/viewtopic.php?t=5265)"
+(https://undertowgames.com/forum/viewtopic.php?t=5265)
+
+Free Fly Camera by MarcPhi."
 
 [connection signal="pressed" from="GenerateButton" to="." method="OnGenerateButtonPressed"]
 [connection signal="pressed" from="CreditsButton" to="." method="OnCreditsButtonPressed"]
