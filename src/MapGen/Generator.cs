@@ -19,7 +19,7 @@ public partial class Generator : Node
         room4 = 4
     }
     [Export]
-    int width = 12, height = 12;
+    int width = 8, height = 8;
     [Export]
     int iterations = 32;
     struct room
@@ -54,9 +54,9 @@ public partial class Generator : Node
     }
     List<walker> walkers = new List<walker>();
     [Export]
-    int maxWalkers = 8;
+    int maxWalkers = 2;
     [Export(PropertyHint.Range, "0,1,0.05")]
-    float walkerDirChange = 0.5f, walkerSpawn = 0.05f;
+    float walkerDirChange = 0.2f, walkerSpawn = 0.05f;
     [Export(PropertyHint.Range, "0,1,0.05")]
     float walkerDestroy = 0.05f;
     [Export(PropertyHint.Range, "0,1,0.05")]
@@ -342,14 +342,14 @@ public partial class Generator : Node
                                 AddChild(rm);
                                 currRoom2++;
                                 break;
-                            case 4:
+                            case 3:
                                 rm = (StaticBody3D)ResourceLoader.Load<PackedScene>("res://Assets/Rooms/room2/rz_room_2_toilets.tscn").Instantiate();
                                 rm.Position = new Vector3(x * 20.48f, 0, y*20.48f);
                                 rm.RotationDegrees = new Vector3(0, rooms[x, y].angle, 0);
                                 AddChild(rm);
                                 currRoom2++;
                                 break;
-                            case 5:
+                            case 4:
                                 rm = (StaticBody3D)ResourceLoader.Load<PackedScene>("res://Assets/Rooms/room2/rz_room_2_medibay.tscn").Instantiate();
                                 rm.Position = new Vector3(x * 20.48f, 0, y*20.48f);
                                 rm.RotationDegrees = new Vector3(0, rooms[x, y].angle, 0);
