@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public partial class Generator : Node
 {
     [Export]
-    static ulong seed = 0;
+    static ulong seed = 0; //please, insert your seed number!
     static RandomNumberGenerator rng = new RandomNumberGenerator();
     public Generator() //should assign seed in constructor.
     {
@@ -35,7 +35,6 @@ public partial class Generator : Node
         public void RandomDirection()
         {
             int choice = rng.RandiRange(0, 3);
-            GD.Print(choice);
             switch (choice)
             {
                 case 0:
