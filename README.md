@@ -1,5 +1,6 @@
-# SCP-MapGen-v2
-- SCP Map Generation in Godot Engine 4, based on walker algorithm.
+# MapGen-v2 (DEPRECATED)
+- Map Generation in Godot Engine 4, based on walker algorithm.
+- It was not enough, so I am stopping support for it.
 
 - Map Generator created by schloppa.
 - I just converted to 3d and added room spawner.
